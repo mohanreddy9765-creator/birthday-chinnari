@@ -1,0 +1,37 @@
+🎉 Birthday Surprise for Chinnari — HOW TO SHARE
+
+You made this website for your friend Chinnari. Here's how to finish it:
+
+1. ADD YOUR PHOTOS (when ready)
+   Put 3 photos here:
+     birthday-love/images/image1.jpg
+     birthday-love/images/image2.jpg
+     birthday-love/images/image3.jpg
+   Names must match exactly. No code change needed.
+
+2. ADD MUSIC (optional)
+   Put your song here:
+     birthday-love/music/music.mp3
+   Tap the floating Music button on the site to play/pause.
+
+3. PREVIEW ON YOUR PHONE/LAPTOP
+   Double-click birthday-love/index.html
+   It opens in your browser. Test all buttons.
+
+4. SEND IT TO CHINNARI (she needs a link, not files)
+   Option A - Easiest (30 seconds):
+     - Go to https://tiiny.host or https://app.netlify.com/drop
+     - Drag the whole "birthday-love" folder onto the page
+     - You get a link like https://chinnari-birthday.netlify.app
+     - Open that link on your phone, scroll to "Send This To Her",
+       tap WhatsApp and send it to her.
+   Option B - No hosting:
+     - Zip the birthday-love folder and send it to her,
+       ask her to unzip and open index.html.
+
+5. CHANGE THE NAME LATER
+   Open birthday-love/script.js, first lines:
+     name: "Chinnari",
+   Change only that word. Everything updates automatically.
+
+Made with care. Enjoy her smile! 💛

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A sweet birthday surprise for an amazing female friend." />
+  <meta property="og:title" content="🎉 A Birthday Surprise For You" />
+  <meta property="og:description" content="Someone made you a little birthday website. Open it 🎁" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#4a0e1e" />
+  <title>Happy Birthday 🎉 — A Surprise For You</title>
+
+  <!-- Elegant typography: serif + modern sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Poppins:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Ambient background layers -->
+  <div class="bg-gradient" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-2" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow-3" aria-hidden="true"></div>
+  <div id="particles" aria-hidden="true"></div>
+  <div id="falling-hearts" aria-hidden="true"></div>
+  <div class="balloons" aria-hidden="true"><span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span><span>🎈</span></div>
+  <div id="progress-bar" aria-hidden="true"></div>
+
+  <!-- ================= OPENING SCREEN ================= -->
+  <section id="opening-screen" aria-label="Opening surprise">
+    <div class="opening-hearts" aria-hidden="true"></div>
+    <div class="opening-card">
+      <p class="opening-eyebrow">A little surprise for an amazing friend</p>
+      <h1 class="opening-title">Heyy, <span data-birthday-name>Friend</span> 🎉</h1>
+
+      <p class="typing-line" id="typing-line-1"></p>
+      <p class="typing-line big" id="typing-line-2"></p>
+
+      <button id="open-surprise-btn" class="btn btn-glow" aria-label="Open your birthday surprise">
+        Open Your Surprise 🎁
+      </button>
+      <p class="opening-hint">Made by a friend who really appreciates you</p>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">🎉</div>
+  </section>
+
+  <!-- ================= MAIN WEBSITE (hidden until opened) ================= -->
+  <div id="main-content" class="hidden">
+
+    <!-- Nav -->
+    <nav class="nav glass-nav" aria-label="Main navigation">
+      <a href="#birthday" class="nav-logo">🎉 <span data-birthday-name>Friend</span></a>
+      <div class="nav-links">
+        <a href="#birthday">Wish</a>
+        <a href="#memories">Memories</a>
+        <a href="#message">Note</a>
+        <a href="#finale">Surprise</a>
+        <a href="#share" class="nav-share">Share 💌</a>
+      </div>
+    </nav>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>HAPPY BIRTHDAY 🎂</span><span>MAKE A WISH ✨</span><span>STAY AWESOME 💛</span><span>EAT CAKE 🎂</span><span>HAPPY BIRTHDAY 🎂</span><span>MAKE A WISH ✨</span><span>STAY AWESOME 💛</span><span>EAT CAKE 🎂</span>
+      </div>
+    </div>
+
+    <!-- SECTION 1 — Birthday Wish -->
+    <header id="birthday" class="section hero reveal">
+      <div class="hero-hearts" aria-hidden="true"></div>
+      <p class="eyebrow">Today is all about you 🎂✨</p>
+      <h2 class="script-title">Happy Birthday,</h2>
+      <h2 class="hero-name"><span data-birthday-name>Friend</span> <span class="heart-inline">🎉</span></h2>
+      <p class="hero-message">
+        Happy Birthday to one of the kindest, funniest, and most genuine people I know.<br /><br />
+        Thank you for all the laughs, the good talks, and for simply being you.<br /><br />
+        I hope your birthday is filled with happiness, success, good food, and everything you truly deserve. 🎂✨
+      </p>
+      <div class="hero-divider" aria-hidden="true"><span>🎉</span></div>
+      <a href="#memories" class="btn btn-soft">See Some Good Moments ↓</a>
+    </header>
+
+    <!-- SECTION 2 — Memories -->
+    <section id="memories" class="section reveal" aria-label="Photo memories">
+      <p class="eyebrow">Good times</p>
+      <h2 class="section-title">Awesome Memories 📸</h2>
+      <p class="section-subtitle">Friendship looks good on you.</p>
+
+      <div class="gallery">
+        <figure class="memory-card reveal">
+          <div class="memory-img-wrap">
+            <img src="images/image1.jpg" alt="Good vibes memory" loading="lazy" data-memory-img />
+            <span class="memory-shine" aria-hidden="true"></span>
+            <span class="memory-heart" aria-hidden="true">😎</span>
+          </div>
+          <figcaption>Good vibes only 😎</figcaption>
+        </figure>
+
+        <figure class="memory-card reveal">
+          <div class="memory-img-wrap">
+            <img src="images/image2.jpg" alt="Partners in laughter" loading="lazy" data-memory-img />
+            <span class="memory-shine" aria-hidden="true"></span>
+            <span class="memory-heart" aria-hidden="true">✨</span>
+          </div>
+          <figcaption>Partners in laughter ✨</figcaption>
+        </figure>
+
+        <figure class="memory-card reveal">
+          <div class="memory-img-wrap">
+            <img src="images/image3.jpg" alt="Grateful for you" loading="lazy" data-memory-img />
+            <span class="memory-shine" aria-hidden="true"></span>
+            <span class="memory-heart" aria-hidden="true">💛</span>
+          </div>
+          <figcaption>Grateful for you 💛</figcaption>
+        </figure>
+      </div>
+      <p class="gallery-note">Tip: Replace <code>images/image1.jpg</code>, <code>image2.jpg</code>, <code>image3.jpg</code> with your own photos.</p>
+    </section>
+
+    <!-- SECTION 3 — Friendly note -->
+    <section id="message" class="section reveal" aria-label="Birthday note">
+      <div class="letter-card glass">
+        <p class="eyebrow">From a friend, with respect</p>
+        <h2 class="section-title">A Note For An Amazing Friend 💌</h2>
+        <div class="letter-divider" aria-hidden="true">💛 ─── ✨ ─── 💛</div>
+        <p class="letter-text">
+          You are the kind of friend everyone wishes for — supportive, honest, fun, and full of positive energy.
+        </p>
+        <p class="letter-text">
+          Thank you for being there, for the jokes, the advice, and all the little moments that mean a lot.
+        </p>
+        <p class="letter-text">
+          On your birthday, I wish you good health, big success, peaceful mind, and endless reasons to smile.
+        </p>
+        <p class="letter-text">
+          Keep shining and keep being awesome. Happy Birthday once again! 🎉
+        </p>
+        <p class="letter-sign">— With best wishes, for <span data-birthday-name>you</span> 💛</p>
+      </div>
+    </section>
+
+    <!-- REASONS — interactive, shareable -->
+    <section id="reasons" class="section reveal" aria-label="Why you are awesome">
+      <p class="eyebrow">Tap to reveal</p>
+      <h2 class="section-title">3 Reasons You're Awesome 💛</h2>
+      <p class="section-subtitle">Go on, tap each card. You deserve it.</p>
+      <div class="reasons-grid">
+        <button class="reason-card glass" data-reason="Your laugh fixes bad days instantly 😄">
+          <span class="reason-num">1</span><span class="reason-front">Tap me 🙈</span>
+        </button>
+        <button class="reason-card glass" data-reason="You care like family, always 💛">
+          <span class="reason-num">2</span><span class="reason-front">Tap me 🙈</span>
+        </button>
+        <button class="reason-card glass" data-reason="You make ordinary days fun ✨">
+          <span class="reason-num">3</span><span class="reason-front">Tap me 🙈</span>
+        </button>
+      </div>
+      <div class="cake-wrap" aria-hidden="true"><div class="cake">🎂</div><p class="cake-text">Make a wish and blow the candles (in your mind 😄)</p></div>
+    </section>
+
+    <!-- SECTION 4 — Final Surprise -->
+    <section id="finale" class="section finale reveal" aria-label="Final surprise">
+      <div class="finale-inner glass">
+        <h2 class="section-title">One Last Thing... 🎉</h2>
+        <p class="section-subtitle">A small wish to end this surprise.</p>
+        <button id="finale-btn" class="btn btn-glow btn-big" aria-label="Reveal final surprise">Reveal 🎁</button>
+
+        <div id="finale-message" class="finale-message hidden">
+          <div class="finale-glow" aria-hidden="true"></div>
+          <h3 class="finale-title">Happy Birthday, <span data-birthday-name>Friend</span> 🎂🎉</h3>
+          <p>
+            May this year bring you closer to your dreams,<br />
+            more happy days, more laughter,<br />
+            and wonderful new memories.
+          </p>
+          <p>
+            Enjoy your day to the fullest.<br /><br />
+            Cheers to you and our friendship! 💛
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHARE — send to your friend -->
+    <section id="share" class="section reveal" aria-label="Share this surprise">
+      <div class="share-card glass">
+        <h2 class="section-title">Send This To Her 💌</h2>
+        <p class="section-subtitle">One tap — WhatsApp it, copy the link, or use the share button. Host the folder online first, then share the link.</p>
+        <div class="share-btns">
+          <button id="share-whatsapp" class="btn btn-soft">WhatsApp 💚</button>
+          <button id="share-native" class="btn btn-soft">Share 📤</button>
+          <button id="share-copy" class="btn btn-soft">Copy Link 🔗</button>
+        </div>
+        <p id="share-msg" class="share-msg" role="status"></p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Made with 💛 for an amazing friend <span data-birthday-name>you</span></p>
+      <p class="footer-small">Thanks for being you ✨</p>
+    </footer>
+  </div>
+
+  <!-- Floating music control -->
+  <button id="music-toggle" class="music-btn" aria-label="Toggle background music" aria-pressed="false">
+    <span id="music-icon" aria-hidden="true">🎵</span>
+    <span id="music-label">Music</span>
+  </button>
+  <audio id="bg-music" loop preload="auto">
+    <source src="music/music.mp3" type="audio/mpeg" />
+  </audio>
+
+  <!-- Celebration explosion layer -->
+  <div id="explosion-layer" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
