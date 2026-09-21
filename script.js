@@ -264,32 +264,6 @@ const birthdaySettings = {
         card.addEventListener('mouseleave', () => { card.style.transform = ''; });
     });
 
-    /* ---------- 12. Share: WhatsApp / native / copy ---------- */
-    const shareMsg = document.getElementById('share-msg');
-    function shareText() {
-        return `Hey ${personName}! 🎉 I made you a little birthday surprise website. Open it: ${location.href}`;
-    }
-    function say(msg) { if (shareMsg) shareMsg.textContent = msg; }
-    const waBtn = document.getElementById('share-whatsapp');
-    const copyBtn = document.getElementById('share-copy');
-    const nativeBtn = document.getElementById('share-native');
-    if (waBtn) waBtn.addEventListener('click', () => {
-        window.open('https://wa.me/?text=' + encodeURIComponent(shareText()), '_blank');
-        say('Opening WhatsApp… send it to her 💚');
-    });
-    if (copyBtn) copyBtn.addEventListener('click', async () => {
-        try {
-            await navigator.clipboard.writeText(shareText());
-            say('Link copied! Paste it to her 🔗✨');
-        } catch { say('Copy this link: ' + location.href); }
-    });
-    if (nativeBtn) nativeBtn.addEventListener('click', async () => {
-        if (navigator.share) {
-            try { await navigator.share({ title: document.title, text: shareText(), url: location.href }); say('Shared! 🎉'); }
-            catch { /* cancelled */ }
-        } else { say('Your browser has no share button — use Copy Link 🔗'); }
-    });
-
     /* ---------- Init ---------- */
     applyName();
     spawnFallingHearts();

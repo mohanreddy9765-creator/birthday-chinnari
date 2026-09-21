@@ -23,8 +23,8 @@ You made this website for your friend Chinnari. Here's how to finish it:
      - Go to https://tiiny.host or https://app.netlify.com/drop
      - Drag the whole "birthday-love" folder onto the page
      - You get a link like https://chinnari-birthday.netlify.app
-     - Open that link on your phone, scroll to "Send This To Her",
-       tap WhatsApp and send it to her.
+     - Open that link on your phone to check it,
+       then send the link to her on WhatsApp.
    Option B - No hosting:
      - Zip the birthday-love folder and send it to her,
        ask her to unzip and open index.html.
