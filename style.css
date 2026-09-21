@@ -279,8 +279,7 @@ body {
   margin-top: 16px; font-family: 'Playfair Display', serif;
   font-size: 1.05rem; font-style: italic; color: #fff;
 }
-.gallery-note { margin-top: 26px; font-size: .8rem; opacity: .6; }
-.gallery-note code { background: rgba(255,255,255,.15); padding: 2px 8px; border-radius: 6px; font-size: .78rem; }
+
 
 /* Image fallback (when user hasn't added photos yet) */
 .img-fallback {
