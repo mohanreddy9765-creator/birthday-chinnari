@@ -1,0 +1,10 @@
+# Auto-deploy config — Netlify serves the birthday site automatically.
+# Connect this folder to Netlify once; every future push redeploys by itself.
+
+[build]
+  publish = "birthday-love"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
